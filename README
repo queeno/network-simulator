@@ -5,7 +5,8 @@ This project is a simple cycle-based network simulator which models flit-level
 communication. It is intended to simulate arbitrary network topologies and
 routing algorithms. The interconnection architecure is based on virtual channel
 routers with wormhole flow-control. The design is based on the BookSim simulator
-(http://nocs.stanford.edu/cgi-bin/trac.cgi/wiki/Resources/BookSim).
+(http://nocs.stanford.edu/cgi-bin/trac.cgi/wiki/Resources/BookSim) and is
+written in Java.
 
 Dependencies
 ------------
