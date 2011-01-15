@@ -1,0 +1,69 @@
+\usepackage{
+    amsmath, 
+    amssymb, 
+    amsthm, 
+    amsfonts,
+    latexsym,
+    graphicx,
+    subfig,
+    comment,
+    url,
+    fullpage,
+    setspace,
+    alltt,
+    calc
+}
+\usepackage{hyperref}
+
+\setlength\fboxsep{4mm}
+\setlength\fboxrule{0pt}
+
+\newcommand{\paramtable}[1]{\begin{tabular}{p{4cm}p{16cm}}#1\end{tabular}}
+
+\newenvironment{paramlist}
+{\begin{list}{}{
+    \renewcommand{\makelabel}[1]{\texttt{##1}\hfil}
+    \setlength{\labelwidth}{3cm}
+    \setlength{\leftmargin}{\labelwidth+\labelsep}
+    }
+}
+{\end{list}}
+
+% Code examples
+% For single line code snippets
+\newcommand{\excode}[1]{\begin{quote}\begin{alltt}#1\end{alltt}\end{quote}}
+\newcommand{\exnotn}[1]{\begin{quote}\begin{alltt}\normalfont #1\end{alltt}\end{quote}}
+
+% For multiline code snippets
+\newenvironment{egcode}
+{\begin{quote}\begin{alltt}}
+{\end{alltt}\end{quote}}
+
+% Multiline notations/algorithms
+\newenvironment{egnotn}
+{\begin{quote}\begin{alltt}\normalfont}
+{\end{alltt}\end{quote}}
+
+\newcommand{\tss}[1]{\textsuperscript{#1}}
+
+% References
+\newcommand{\fig}[1]{Figure~\ref{fig:#1}} 
+\newcommand{\tab}[1]{Table~\ref{tab:#1}}
+\newcommand{\chap}[1]{Chapter~\ref{chap:#1}}
+\newcommand{\sect}[1]{Section~\ref{sec:#1}}
+\newcommand{\algo}[1]{Algorithm~\ref{alg:#1}}
+\newcommand{\apdx}[1]{Appendix ~\ref{sec:#1}}                        
+\newcommand{\thmref}[1]{Theorem~\ref{thm:#1}}
+\newcommand{\lemref}[1]{Lemma~\ref{lem:#1}}
+\newcommand{\corref}[1]{Corollary~\ref{cor:#1}}
+\newcommand{\eqnref}[1]{Equation~\ref{eqn:#1}}
+
+% Shorthand formatting
+\newcommand{\ben}{\begin{enumerate}}
+\newcommand{\een}{\end{enumerate}}
+\newcommand{\bit}{\begin{itemize}}
+\newcommand{\eit}{\end{itemize}}
+\newcommand{\bvb}{\begin{verbatim}}
+\newcommand{\evb}{\end{verbatim}}
+\newcommand{\ttt}[1]{\texttt{#1}}
+\newcommand{\vpad}{\vspace{8pt}}
